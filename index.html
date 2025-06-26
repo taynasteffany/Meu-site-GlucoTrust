@@ -118,27 +118,45 @@ digistorePromocode( { "product_id": 419540, "adjust_domain": true } );
   })(window,document);
 </script></head>
 <body class="bg-body">
+<!-- Countdown Timer + Call-to-Action Button -->
+<div style="background-color:#ffe600; padding: 20px; text-align: center; font-family: Arial, sans-serif;">
+  <h2 style="color:#d80000; font-size: 28px; margin-bottom: 10px;">🔥 Hurry! Offer expires in:</h2>
+  <div id="countdown" style="font-size: 24px; font-weight: bold; color:#000;"></div>
+  <a href="https://prodentim24.com/text.php#aff=taynassteffany" 
+     style="display:inline-block; margin-top: 15px; padding: 15px 30px; background-color:#d80000; color:white; font-size: 20px; font-weight: bold; border-radius: 10px; text-decoration: none;">
+    👉 Click Here to Secure Your Discount!
+  </a>
+</div>
 
+<script>
+  function startCountdown(duration, display) {
+    let timer = duration, minutes, seconds;
+    setInterval(function () {
+      minutes = parseInt(timer / 60, 10);
+      seconds = parseInt(timer % 60, 10);
+
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+
+      display.textContent = minutes + ":" + seconds;
+
+      if (--timer < 0) {
+        timer = duration;
+      }
+    }, 1000);
+  }
+
+  window.onload = function () {
+    let countdown = document.getElementById("countdown");
+    startCountdown(300, countdown); // 5 minutes
+  };
+</script>
     <div class="container-fluid">
     <div class="container pt-0">
         <div class="row">
             <div class="col-12">
                 <h1 class="boldIt my-4 text-center max-800">Tired of High Blood Sugar Controlling Your Life? Discover the Natural Secret Helping Thousands Take Back Their Health!
-<a href="https://prodentim24.com/text.php#aff=taynassteffany"
-   style="margin-top: 20px;
-          display: inline-block;
-          background-color: #ff3c00;
-          color: #fff;
-          padding: 18px 35px;
-          border-radius: 10px;
-          font-size: 20px;
-          font-weight: bold;
-          text-align: center;
-          text-decoration: none;
-          box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-          transition: background-color 0.3s;">
-   🔥 Claim Your Exclusive Discount Now!
-</a>
+
 Say goodbye to harsh medications, restrictive diets, and constant fatigue.
 GlucoTrust is a powerful natural formula designed to support healthy blood sugar levels, promote weight loss, and help you sleep better at night — without giving up the foods you love.
 
